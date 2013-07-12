@@ -3,7 +3,8 @@ require "font/awesome/sass/version"
 module Font
   module Awesome
     module Sass
-      # Your code goes here...
+      require 'font/awesome/sass/engine'
+      require 'font/awesome/sass/version'
     end
   end
 end

@@ -1,7 +1,8 @@
 module Font
   module Awesome
     module Sass
-      VERSION = "3.2.1"
+      class Engine < ::Rails::Engine
+      end
     end
   end
 end
