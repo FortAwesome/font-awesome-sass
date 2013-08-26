@@ -16,6 +16,11 @@ Or install it yourself as:
 
     $ gem install font-awesome-sass
 
+If you use Rails/Sprockets, add this to e.g. application.css.scss:
+
+    *= require font-awesome
+
+
 ## Usage
 
 TODO: Write usage instructions here
