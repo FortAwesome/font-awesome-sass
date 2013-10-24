@@ -1,7 +1,7 @@
 module Font
   module Awesome
     module Sass
-      VERSION = "3.2.1.4"
+      VERSION = "4.0.0"
     end
   end
 end
