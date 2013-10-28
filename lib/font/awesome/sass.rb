@@ -1,4 +1,4 @@
-require "font/awesome/sass/version"
+require 'font/awesome/sass/version'
 
 module Font
   module Awesome
