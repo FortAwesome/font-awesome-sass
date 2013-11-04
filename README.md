@@ -1,6 +1,6 @@
 # Font::Awesome::Sass
 
-TODO: Write a gem description
+Font-Awesome SASS gem for use in Ruby/Rails projects
 
 ## Installation
 
@@ -19,16 +19,3 @@ Or install it yourself as:
 If you use Rails/Sprockets, add this to e.g. application.css.scss:
 
     *= require font-awesome
-
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

@@ -1,5 +1,3 @@
-require 'font/awesome/sass/version'
-
 module Font
   module Awesome
     module Sass
