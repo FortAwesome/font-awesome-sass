@@ -19,3 +19,15 @@ Or install it yourself as:
 If you use Rails/Sprockets, add this to e.g. application.css.scss:
 
     *= require font-awesome
+
+## Helper usage
+
+In your view:
+
+```ruby
+icon('flag')
+# => <i class="fa fa-flag"></i>
+
+icon('flag', 'Font Awesome')
+# => <i class="fa fa-flag"></i> Font Awesome
+```
