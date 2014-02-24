@@ -1,6 +1,6 @@
-module Font
-  module Awesome
-    module Sass
+module FontAwesome
+  module Sass
+    module Rails
       class Engine < ::Rails::Engine
         initializer 'font-awesome-sass.assets.precompile' do |app|
           app.config.assets.precompile += %w(
