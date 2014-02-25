@@ -21,8 +21,12 @@
  *  ------------------------------------------------------------------------------
  *  Email: dave@fontawesome.io
  *  Twitter: http://twitter.com/davegandy
- *  Work: Lead Product Designer @ Kyruus - http://kyruus.com
  */
+
+//= depend_on_asset "fontawesome-webfont.eot"
+//= depend_on_asset "fontawesome-webfont.svg"
+//= depend_on_asset "fontawesome-webfont.ttf"
+//= depend_on_asset "fontawesome-webfont.woff"
 
 @import "font-awesome/variables";
 @import "font-awesome/mixins";
