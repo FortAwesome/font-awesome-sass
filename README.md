@@ -40,13 +40,13 @@ In your view:
   ```
 
   ```ruby
-  icon('flag', class: 'strong')
+  icon('flag', '', class: 'strong')
   # => <i class="fa fa-flag strong"></i>
   ```
 
   ```ruby
-  icon('flag', id: 'my-icon', class: 'strong')
-  # => <i id="my-icon" class="fa fa-flag strong"></i>
+  icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
+  # => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
   ```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
