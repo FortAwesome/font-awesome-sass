@@ -49,6 +49,7 @@ module FontAwesome
       def register_rails_engine
         require 'sass-rails'
         require 'font_awesome/sass/rails/engine'
+        require 'font_awesome/sass/rails/railtie'
       end
     end
   end

@@ -29,3 +29,24 @@ Prepend the `fa` class to existing icons:
 
     4.* Syntax
     <i class="fa fa-github"></i>
+
+## Rails Helper usage
+
+In your view:
+
+  ```ruby
+  icon('flag')
+  # => <i class="fa fa-flag"></i>
+  ```
+
+  ```ruby
+  icon('flag', class: 'strong')
+  # => <i class="fa fa-flag strong"></i>
+  ```
+
+  ```ruby
+  icon('flag', id: 'my-icon', class: 'strong')
+  # => <i id="my-icon" class="fa fa-flag strong"></i>
+  ```
+
+Note: the icon helper can take a hash of options that will be passed to the content_tag helper
