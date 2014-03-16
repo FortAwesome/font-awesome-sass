@@ -24,7 +24,7 @@ module FontAwesome
       end
 
       def assets_path
-        @assets_path ||= File.join(gem_path, 'vendor', 'assets')
+        @assets_path ||= File.join(gem_path, "..", 'vendor', 'assets')
       end
 
       def compass?
