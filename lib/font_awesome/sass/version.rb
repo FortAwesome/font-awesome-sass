@@ -1,5 +1,5 @@
 module FontAwesome
   module Sass
-    VERSION = '4.0.3.2'
+    VERSION = '4.1.0'
   end
 end
