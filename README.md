@@ -1,6 +1,6 @@
 # Font::Awesome::Sass
 
-Font-Awesome SASS gem for use in Ruby projects
+Font-Awesome SASS gem for use in Rails or Compass projects
 
 ## Installation
 
@@ -16,7 +16,7 @@ Or install it yourself as:
 
     $ gem install font-awesome-sass
 
-If you use Rails/Sprockets, add this to e.g. application.css.scss:
+If you use Rails add this to e.g. application.css.scss:
 
     *= require font-awesome
 
