@@ -12,7 +12,7 @@ module FontAwesome
       end
 
       def gem_path
-        @gem_path ||= File.expand_path('..', File.dirname(__FILE__))
+        @gem_path ||= File.expand_path('../..', File.dirname(__FILE__))
       end
 
       def stylesheets_path
