@@ -2,6 +2,8 @@
 
 Font-Awesome SASS gem for use in Rails or Compass projects
 
+    * NOTE: Working on supporting other environments *
+
 ## Installation
 
 Add this line to your application's Gemfile:
