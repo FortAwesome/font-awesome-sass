@@ -4,11 +4,14 @@ module FontAwesome
       def load!
         if rails?
           register_rails_engine
+        else
+          register_sprocket_path
         end
 
         if compass?
           register_compass_extension
         end
+
       end
 
       def gem_path
@@ -50,6 +53,12 @@ module FontAwesome
         require 'sass-rails'
         require 'font_awesome/sass/rails/engine'
         require 'font_awesome/sass/rails/railtie'
+      end
+
+      def register_sprocket_path
+        require 'sprockets'
+        Sprockets.append_path File.expand_path('../../../vendor/assets/fonts',__FILE__)
+        Sprockets.append_path File.expand_path('../../../vendor/assets/stylesheets',__FILE__)
       end
     end
   end
