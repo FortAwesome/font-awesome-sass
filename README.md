@@ -20,7 +20,7 @@ Or install it yourself as:
 
 If you use Rails add this to e.g. application.css.scss:
 
-    *= require font-awesome
+    @import "font-awesome";
 
 ## Upgrading from 3.*
 
