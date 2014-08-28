@@ -1,54 +1,95 @@
-# Font::Awesome::Sass
+# FontAwesome::Sass
 
-Font-Awesome SASS gem for use in Rails or Compass projects
-
-    * NOTE: Working on supporting other environments *
+'font-awesome-sass' is a Sass-powered version of FontAwesome for your Ruby projects and plays nicely with 
+ Ruby on Rails, Compass, Sprockets, etc.
+ 
+ Refactored to support more Ruby environments with code and documentation humbly used from the excellent
+ [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team 
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Please see the appropriate guide for your environment of choice:
 
-    gem 'font-awesome-sass'
+* [Ruby on Rails](#a-ruby-on-rails).
+* [Compass](#b-compass-without-rails) not on Rails.
+
+### a. Ruby on Rails
+
+In your Gemfile include:
+
+```ruby
+gem 'font-awesome-sass', '~> 4.2.0'
+```
 
 And then execute:
 
-    $ bundle
+```sh
+bundle install
+```
 
-Or install it yourself as:
+Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome-sprockets` file
+includes the sprockets assest helper Sass functions used for finding the proper path to the font file.
 
-    $ gem install font-awesome-sass
+```scss
+@import "font-awesome-sprockets";
+@import "font-awesome";
+```
 
-If you use Rails add this to e.g. application.css.scss:
-
-    *= require font-awesome
-
-## Upgrading from 3.*
-
-Prepend the `fa` class to existing icons:
-
-    3.* Syntax
-    <i class="icon-github"></i>
-
-    4.* Syntax
-    <i class="fa fa-github"></i>
-
-## Rails Helper usage
+#### Rails Helper usage
 
 In your view:
 
-  ```ruby
-  icon('flag')
-  # => <i class="fa fa-flag"></i>
-  ```
+```ruby
+icon('flag')
+# => <i class="fa fa-flag"></i>
+```
 
-  ```ruby
-  icon('flag', '', class: 'strong')
-  # => <i class="fa fa-flag strong"></i>
-  ```
+```ruby
+icon('flag', '', class: 'strong')
+# => <i class="fa fa-flag strong"></i>
+```
 
-  ```ruby
-  icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
-  # => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
-  ```
+```ruby
+icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
+# => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
+```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
+
+### b. Compass without Rails
+
+Install the gem
+
+```sh
+gem install bootstrap-sass
+```
+
+If you have an existing Compass project:
+
+```ruby
+# config.rb:
+require 'bootstrap-sass'
+```
+
+Import the FontAwesome styles
+
+```scss
+@import "font-awesome-compess";
+@import "font-awesome";
+```
+
+## Upgrading from FontAwesome::Sass 3.x
+
+Prepend the `fa` class to existing icons:
+
+3.x Syntax
+
+```html
+<i class="icon-github"></i>
+```
+
+4.x Syntax
+
+```html
+<i class="fa fa-github"></i>
+```

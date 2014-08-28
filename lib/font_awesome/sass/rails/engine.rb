@@ -3,9 +3,11 @@ module FontAwesome
     module Rails
       class Engine < ::Rails::Engine
         initializer 'font-awesome-sass.assets.precompile' do |app|
-          app.config.assets.precompile += %w(
-            fontawesome-webfont.eot fontawesome-webfont.svg
-            fontawesome-webfont.ttf fontawesome-webfont.woff)
+          %w(stylesheets fonts).each do |sub|
+            app.config.assets.paths << root.join('assets', sub)
+          end
+
+          app.config.assets.precompile << %r(font-awesome/fontawesome-webfont\.(?:eot|svg|ttf|woff)$)
         end
       end
     end
