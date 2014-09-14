@@ -45,7 +45,7 @@ icon('flag')
 ```
 
 ```ruby
-icon('flag', {}, class: 'strong')
+icon('flag', class: 'strong')
 # => <i class="fa fa-flag strong"></i>
 ```
 
