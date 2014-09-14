@@ -1,10 +1,10 @@
 # FontAwesome::Sass
 
-'font-awesome-sass' is a Sass-powered version of FontAwesome for your Ruby projects and plays nicely with 
+'font-awesome-sass' is a Sass-powered version of FontAwesome for your Ruby projects and plays nicely with
  Ruby on Rails, Compass, Sprockets, etc.
- 
+
  Refactored to support more Ruby environments with code and documentation humbly used from the excellent
- [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team 
+ [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
 ## Installation
 
@@ -45,16 +45,24 @@ icon('flag')
 ```
 
 ```ruby
-icon('flag', '', class: 'strong')
+icon('flag', {}, class: 'strong')
 # => <i class="fa fa-flag strong"></i>
 ```
 
 ```ruby
-icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
+icon('flag', text: 'Font Awesome', id: 'my-icon', class: 'strong')
 # => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
 ```
 
-Note: the icon helper can take a hash of options that will be passed to the content_tag helper
+```ruby
+icon('flag', text: 'Font Awesome', icon_text: content_tag(:em, "4", class: 'badge'), id: 'my-icon', class: 'strong')
+# => <i id="my-icon" class="fa fa-flag strong"><em class="badge">4</em></i> Font Awesome
+```
+
+Note: the icon helper can take a hash of options among them:
+- text: The text to be appended **after** the icon node.
+- icon_text: The text to be inserter **inside** the icon node.
+- any other HTML option that will be passed down to the icon like class, id, etc.
 
 ### b. Compass without Rails
 
