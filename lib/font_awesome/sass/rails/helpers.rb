@@ -10,7 +10,7 @@ module FontAwesome
           text = options.delete(:text)
           icon_text = options.delete(:icon_text)
 
-          html = content_tag(:i, icon_text, html_options)
+          html = content_tag(:i, icon_text, options)
           html << " #{text}" unless text.blank?
           html.html_safe
         end
