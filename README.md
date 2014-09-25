@@ -61,14 +61,14 @@ Note: the icon helper can take a hash of options that will be passed to the cont
 Install the gem
 
 ```sh
-gem install bootstrap-sass
+gem install font-awesome-sass
 ```
 
 If you have an existing Compass project:
 
 ```ruby
 # config.rb:
-require 'bootstrap-sass'
+require 'font-awesome-sass'
 ```
 
 Import the FontAwesome styles
