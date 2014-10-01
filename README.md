@@ -74,7 +74,7 @@ require 'bootstrap-sass'
 Import the FontAwesome styles
 
 ```scss
-@import "font-awesome-compess";
+@import "font-awesome-compass";
 @import "font-awesome";
 ```
 
