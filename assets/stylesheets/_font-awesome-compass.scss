@@ -1,7 +1,3 @@
-@function icon-font-path($path) {
+@function fa-font-path($path) {
   @return font-url($path, true);
-}
-
-@function icon-image-path($path) {
-  @return image-url($path, true);
 }

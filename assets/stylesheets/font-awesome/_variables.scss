@@ -1,7 +1,6 @@
 // Variables
 // --------------------------
-
-$fa-sass-asset-helper: (icon-font-path("") != unquote('icon-font-path("")')) !default;
+$fa-sass-asset-helper: (fa-font-path("") != unquote('fa-font-path("")')) !default;
 
 $fa-font-path:        if($fa-sass-asset-helper, "font-awesome/", "../fonts/font-awesome/") !default;
 $fa-font-name:        "fontawesome-webfont" !default;
