@@ -28,7 +28,7 @@ bundle install
 ```
 
 Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome-sprockets` file
-includes the sprockets assest helper Sass functions used for finding the proper path to the font file.
+includes the sprockets assets helper Sass functions used for finding the proper path to the font file.
 
 ```scss
 @import "font-awesome-sprockets";
