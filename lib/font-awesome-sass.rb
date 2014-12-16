@@ -6,6 +6,8 @@ module FontAwesome
 
         register_rails_engine if rails?
 
+        register_sprockets  if sprockets?
+
         configure_sass
       end
 
@@ -33,6 +35,10 @@ module FontAwesome
         defined?(::Rails)
       end
 
+      def sprockets?
+        defined?(::Sprockets)
+      end
+
       private
 
       def configure_sass
@@ -54,6 +60,11 @@ module FontAwesome
         require 'sass-rails'
         require 'font_awesome/sass/rails/engine'
         require 'font_awesome/sass/rails/railtie'
+      end
+
+      def register_sprockets
+        Sprockets.append_path(stylesheets_path)
+        Sprockets.append_path(fonts_path)
       end
     end
   end
