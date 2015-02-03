@@ -52,6 +52,8 @@ module FontAwesome
       end
 
       def register_compass_extension
+        require 'font_awesome/sass/version'
+
         ::Compass::Frameworks.register(
             'font-awesome',
             :version               => FontAwesome::Sass::VERSION,
