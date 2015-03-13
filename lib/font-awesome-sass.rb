@@ -72,7 +72,6 @@ module FontAwesome
       def register_sprockets
         Sprockets.append_path(stylesheets_path)
         Sprockets.append_path(fonts_path)
-        Sprockets.append_path(javascripts_path)
       end
     end
   end
