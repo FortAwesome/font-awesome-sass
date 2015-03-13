@@ -8,7 +8,7 @@ module FontAwesome
           
           content_class = "fa fa-#{icon}"
           content_class << " #{html_options[:class]}" if html_options && html_options.key?(:class)
-          html_options[:class] = content_class
+          html_options[:class] = content_class if html_options
 
           html = content_tag(:i, nil, html_options)
           html << ' ' << text unless text.blank?
