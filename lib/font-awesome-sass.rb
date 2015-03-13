@@ -10,6 +10,8 @@ module FontAwesome
           register_sprockets
         end
 
+        register_sprockets  if sprockets?
+
         configure_sass
       end
 
@@ -41,6 +43,10 @@ module FontAwesome
 
       def rails?
         defined?(::Rails)
+      end
+
+      def sprockets?
+        defined?(::Sprockets)
       end
 
       private
