@@ -11,7 +11,7 @@ module FontAwesome
           html_options[:class] = content_class
 
           html = content_tag(:i, nil, html_options)
-          html << ' ' << text unless text.blank?
+          html << ' ' << text.to_s unless text.blank?
           html
         end
       end
