@@ -4,7 +4,12 @@ module FontAwesome
       module ViewHelpers
         def icon(icon, *args)
           text, html_options = args
-          html_options = text if text.is_a?(Hash)
+          if text.is_a?(Hash)
+            html_options = text
+            text = ""
+          else
+            html_options = {}
+          end
           
           content_class = "fa fa-#{icon}"
           content_class << " #{html_options[:class]}" if html_options.key?(:class)
