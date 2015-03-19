@@ -2,10 +2,9 @@ module FontAwesome
   module Sass
     module Rails
       module ViewHelpers
-        def icon(icon, *args)
-          text, html_options = args
-          html_options = text if text.is_a?(Hash)
-          
+        def icon(icon, text = nil, html_options = {})
+          text, html_options = nil, text if text.is_a?(Hash)
+
           content_class = "fa fa-#{icon}"
           content_class << " #{html_options[:class]}" if html_options.key?(:class)
           html_options[:class] = content_class
