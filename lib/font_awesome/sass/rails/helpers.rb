@@ -5,8 +5,8 @@ module FontAwesome
         def icon(icon, text = nil, html_options = {})
           text, html_options = nil, text if text.is_a?(Hash)
 
-          icons = icon.split(" ").map { |icon| "fa-#{icon}" }.join(" ")
-          content_class = "fa #{icons}"
+          icons = icon.is_a?(Array) ? icon : icon.to_s.split(" ")
+          content_class = "fa #{icons.map { |i| "fa-#{i}" }.join(' ')}"
           content_class << " #{html_options[:class]}" if html_options.key?(:class)
           html_options[:class] = content_class
 
