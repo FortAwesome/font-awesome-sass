@@ -209,6 +209,8 @@
 .#{$fa-css-prefix}-truck:before { content: $fa-var-truck; }
 .#{$fa-css-prefix}-pinterest:before { content: $fa-var-pinterest; }
 .#{$fa-css-prefix}-pinterest-square:before { content: $fa-var-pinterest-square; }
+.#{$fa-css-prefix}-google-plus-circle:before,
+.#{$fa-css-prefix}-google-plus-official:before { content: $fa-var-google-plus-official; }
 .#{$fa-css-prefix}-google-plus-square:before { content: $fa-var-google-plus-square; }
 .#{$fa-css-prefix}-google-plus:before { content: $fa-var-google-plus; }
 .#{$fa-css-prefix}-money:before { content: $fa-var-money; }
@@ -675,6 +677,8 @@
 .#{$fa-css-prefix}-houzz:before { content: $fa-var-houzz; }
 .#{$fa-css-prefix}-vimeo:before { content: $fa-var-vimeo; }
 .#{$fa-css-prefix}-black-tie:before { content: $fa-var-black-tie; }
+.#{$fa-css-prefix}-fa:before,
+.#{$fa-css-prefix}-font-awesome:before { content: $fa-var-font-awesome; }
 .#{$fa-css-prefix}-fonticons:before { content: $fa-var-fonticons; }
 .#{$fa-css-prefix}-reddit-alien:before { content: $fa-var-reddit-alien; }
 .#{$fa-css-prefix}-edge:before { content: $fa-var-edge; }
