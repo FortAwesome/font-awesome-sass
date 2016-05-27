@@ -2,11 +2,11 @@
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with 
+'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with
  Ruby on Rails, Compass, Sprockets, etc.
- 
+
  Refactored to support more Ruby environments with code and documentation humbly used from the excellent
- [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team 
+ [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
 ## Installation
 
@@ -20,7 +20,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 4.6.2'
+gem 'font-awesome-sass', '~> 4.6.3'
 ```
 
 And then execute:
