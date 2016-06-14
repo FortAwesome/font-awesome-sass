@@ -2,7 +2,6 @@
   "name": "font-awesome-sass",
   "version": "4.6.2",
   "description": "font-awesome-sass is a Sass-powered version of FontAwesome 4, ready to drop right into your Sass powered applications.",
-  "main": "assets/javascripts/font-awesome-sass.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/FortAwesome/font-awesome-sass"
