@@ -1,0 +1,32 @@
+{
+  "name": "font-awesome-sass",
+  "version": "4.6.2",
+  "description": "font-awesome-sass is a Sass-powered version of FontAwesome 4, ready to drop right into your Sass powered applications.",
+  "main": "assets/javascripts/font-awesome-sass.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/FortAwesome/font-awesome-sass"
+  },
+  "keywords": [
+    "fontawesome",
+    "sass",
+    "css",
+    "eyeglass-module"
+  ],
+  "contributors": [
+    "?"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FortAwesome/font-awesome-sass/issues"
+  },
+  "devDependencies": {
+    "node-sass": "~3.7.0",
+    "mincer": "~1.4.0",
+    "ejs": "~2.4.2"
+  },
+  "eyeglass": {
+    "exports": "eyeglass-exports.js",
+    "needs": "^0.7.1"
+  }
+}
