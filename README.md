@@ -20,7 +20,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 4.6.2'
+gem 'font-awesome-sass', '~> 4.7.0'
 ```
 
 And then execute:
