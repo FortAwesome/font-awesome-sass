@@ -1,3 +1,5 @@
+require 'font_awesome/sass/version'
+
 module FontAwesome
   module Sass
     class << self
