@@ -47,6 +47,11 @@ icon('flag')
 ```
 
 ```ruby
+icon('flag 2x')
+# => <i class="fa fa-flag fa-2x"></i>
+```
+
+```ruby
 icon('flag', class: 'strong')
 # => <i class="fa fa-flag strong"></i>
 ```
