@@ -2,11 +2,21 @@
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with 
+'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with
  Ruby on Rails, Compass, Sprockets, etc.
- 
+
  Refactored to support more Ruby environments with code and documentation humbly used from the excellent
- [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team 
+ [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
+
+## Breaking Changes
+
+With the update to Font Awesome 5.x there are some breaking changes that will effect your use of this gem. Some of the changes include:
+
+  * Icon name changes
+  * New icons
+  * The use of an icon style (`solid`, `regular`, or `brands`)
+
+You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/get-started/web-fonts-with-css) guide, our [How to Use](https://fontawesome.com/how-to-use/web-fonts-with-css) guide, and our [Upgrading from Version 4](https://fontawesome.com/how-to-use/upgrading-from-4) guide.
 
 ## Installation
 
@@ -20,7 +30,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 4.7.0'
+gem 'font-awesome-sass', '~> 5.0.6'
 ```
 
 And then execute:
@@ -39,21 +49,27 @@ includes the sprockets assets helper Sass functions used for finding the proper 
 
 #### Rails Helper usage
 
+With Font Awesome 5.x you now need to select what style of icon you want to use. Font Awesome 5.x has 3 styles:
+
+  * solid (`fas`)
+  * regular (`far`)
+  * brands (`fab`)
+
 In your view:
 
 ```ruby
-icon('flag')
-# => <i class="fa fa-flag"></i>
+icon('fas', 'flag')
+# => <i class="fas fa-flag"></i>
 ```
 
 ```ruby
-icon('flag', class: 'strong')
-# => <i class="fa fa-flag strong"></i>
+icon('far', 'address-book', class: 'strong')
+# => <i class="far fa-address-book strong"></i>
 ```
 
 ```ruby
-icon('flag', 'Font Awesome', id: 'my-icon', class: 'strong')
-# => <i id="my-icon" class="fa fa-flag strong"></i> Font Awesome
+icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
+# => <i id="my-icon" class="fab fa-font-awesome strong"></i> Font Awesome
 ```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
@@ -80,18 +96,18 @@ Import the FontAwesome styles
 @import "font-awesome";
 ```
 
-## Upgrading from FontAwesome::Sass 3.x
+## Upgrading from FontAwesome::Sass 4.x
 
-Prepend the `fa` class to existing icons:
-
-3.x Syntax
-
-```html
-<i class="icon-github"></i>
-```
+Prepend the style of the icon you want to use (`fas`, `far`, `fab`) class to existing icons:
 
 4.x Syntax
 
 ```html
 <i class="fa fa-github"></i>
+```
+
+5.x Syntax (GitHub icon exists in the Brands style)
+
+```html
+<i class="fab fa-github"></i>
 ```

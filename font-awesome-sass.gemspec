@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.name          = 'font-awesome-sass'
   spec.version       = FontAwesome::Sass::VERSION
   spec.authors       = ['Travis Chase']
-  spec.email         = ['travis@travischase.me']
+  spec.email         = ['travis@fontawesome.com']
   spec.description   = 'Font-Awesome SASS gem for use in Ruby projects'
   spec.summary       = 'Font-Awesome SASS'
   spec.homepage      = 'https://github.com/FortAwesome/font-awesome-sass'
@@ -21,7 +21,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'sass', '>= 3.2'
 
   spec.add_development_dependency 'bundler', '>= 1.3'
+  spec.add_development_dependency 'compass'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'sass-rails'
-  spec.add_development_dependency 'compass'
 end
