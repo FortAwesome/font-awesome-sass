@@ -23,5 +23,4 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '>= 1.3'
   spec.add_development_dependency 'compass'
   spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'sass-rails'
 end
