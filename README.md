@@ -47,6 +47,8 @@ includes the sprockets assets helper Sass functions used for finding the proper 
 @import "font-awesome";
 ```
 
+If `app/assets/stylesheets/application.css.scss` does not exist then rename `app/assets/stylesheets/application.css` and add the `@import` statements below the `*= require` statements but outside of the comment block.
+
 #### Rails Helper usage
 
 With Font Awesome 5.x you now need to select what style of icon you want to use. Font Awesome 5.x has 3 styles:
