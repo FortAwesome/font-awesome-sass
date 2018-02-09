@@ -10,7 +10,7 @@
    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.woff2'), '#{$fa-font-path}/fa-solid-900.woff2')) format('woff2'),
    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.woff'), '#{$fa-font-path}/fa-solid-900.woff')) format('woff'),
    url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.ttf'), '#{$fa-font-path}/fa-solid-900.ttf')) format('truetype'),
-   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.svg'), '#{$fa-font-path}/fa-solid-900.svg')) format('svg');
+   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-solid-900.svg#fontawesome'), '#{$fa-font-path}/fa-solid-900.svg#fontawesome')) format('svg');
  }
 
  @font-face {
@@ -22,7 +22,7 @@
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.woff2'), '#{$fa-font-path}/fa-regular-400.woff2')) format('woff2'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.woff'), '#{$fa-font-path}/fa-regular-400.woff')) format('woff'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.ttf'), '#{$fa-font-path}/fa-regular-400.ttf')) format('truetype'),
-  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.svg'), '#{$fa-font-path}/fa-regular-400.svg')) format('svg');
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-regular-400.svg#fontawesome'), '#{$fa-font-path}/fa-regular-400.svg#fontawesome')) format('svg');
 }
 
 @font-face {
@@ -34,7 +34,7 @@
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.woff2'), '#{$fa-font-path}/fa-brands-400.woff2')) format('woff2'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.woff'), '#{$fa-font-path}/fa-brands-400.woff')) format('woff'),
   url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.ttf'), '#{$fa-font-path}/fa-brands-400.ttf')) format('truetype'),
-  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.svg'), '#{$fa-font-path}/fa-brands-400.svg')) format('svg');
+  url(if($fa-sass-asset-helper, fa-font-path('#{$fa-font-path}/fa-brands-400.svg#fontawesome'), '#{$fa-font-path}/fa-brands-400.svg#fontawesome')) format('svg');
 }
 
 .fa,
