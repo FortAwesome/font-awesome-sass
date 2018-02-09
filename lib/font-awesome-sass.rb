@@ -5,6 +5,7 @@ module FontAwesome
         register_compass_extension if compass?
 
         if rails?
+          register_rails_sass
           register_rails_engine
         elsif sprockets?
           register_sprockets
@@ -60,6 +61,12 @@ module FontAwesome
           stylesheets_directory: stylesheets_path,
           templates_directory: File.join(gem_path, 'templates')
         )
+      end
+      
+      def register_rails_sass
+        require 'sass-rails'
+      rescue LoadError
+        require 'sassc-rails'
       end
 
       def register_rails_engine
