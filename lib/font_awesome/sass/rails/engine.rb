@@ -8,7 +8,9 @@ module FontAwesome
           end
 
           %w[eot svg ttf woff woff2].each do |ext|
-            app.config.assets.precompile << "font-awesome/fontawesome-webfont.#{ext}"
+            app.config.assets.precompile << "font-awesome/fa-solid-900.#{ext}"
+            app.config.assets.precompile << "font-awesome/fa-regular-400.#{ext}"
+            app.config.assets.precompile << "font-awesome/fa-brands-400.#{ext}"
           end
         end
       end
