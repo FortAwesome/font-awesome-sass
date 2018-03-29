@@ -74,6 +74,15 @@ icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
 # => <i id="my-icon" class="fab fa-font-awesome strong"></i> Font Awesome
 ```
 
+Size control:
+
+```ruby
+icon('fas', 'flag', size: 'lg')
+# => <i class="fas fa-flag fa-lg"></i>
+```
+
+Available size options: `xs`, `sm`, `lg` and `2x` through `10x`.
+
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
 
 ### b. Compass without Rails

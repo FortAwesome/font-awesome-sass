@@ -7,6 +7,7 @@ module FontAwesome
 
           content_class = "#{style} fa-#{name}"
           content_class << " #{html_options[:class]}" if html_options.key?(:class)
+          content_class << " fa-#{html_options[:size]}"; html_options.delete(:size) if html_options.key?(:size)
           html_options[:class] = content_class
 
           html = content_tag(:i, nil, html_options)
