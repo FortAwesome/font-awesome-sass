@@ -1,7 +1,10 @@
 // Variables
 // --------------------------
 
-$fa-font-path:                "../webfonts" !default;
+$fa-sass-asset-helper: false !default;
+
+$fa-font-path: if($fa-sass-asset-helper, "font-awesome", "../fonts/font-awesome") !default;
+
 $fa-font-size-base:           16px !default;
 $fa-css-prefix:               fa !default;
 $fa-version:                  "5.1.0" !default;
