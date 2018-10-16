@@ -30,7 +30,7 @@ Please see the appropriate guide for your environment of choice:
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 5.3.1'
+gem 'font-awesome-sass', '~> 5.4.1'
 ```
 
 And then execute:
