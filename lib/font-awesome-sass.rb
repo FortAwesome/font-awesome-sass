@@ -45,7 +45,7 @@ module FontAwesome
       private
 
       def configure_sass
-        require 'sass'
+        require 'sassc'
 
         ::Sass.load_paths << stylesheets_path
       end
