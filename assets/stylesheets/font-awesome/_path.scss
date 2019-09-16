@@ -2,6 +2,7 @@
  * -------------------------- */
 
  @font-face {
+   font-display: $fa-font-display;
    font-family: 'Font Awesome 5 Free';
    font-style: normal;
    font-weight: 900;
@@ -14,6 +15,7 @@
  }
 
  @font-face {
+  font-display: $fa-font-display;
   font-family: 'Font Awesome 5 Free';
   font-style: normal;
   font-weight: 400;
@@ -26,6 +28,7 @@
 }
 
 @font-face {
+  font-display: $fa-font-display;
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: normal;
