@@ -121,20 +121,28 @@ Assuming you have purchased fontawesome pro and want to use Rails asset pipeline
 
 First login to fontawesome and go to the download section. You will see two options in the download seaction, they are "Web" and "Desktop". Click on "Pro for Web" and download it. Unzip it to any tempory folder. 
 
-### Step 1
+#### Step 1
 
 * Copy **"./css/all.css"** to you project's stylesheets directory and rename it **"app/assets/stylesheets/fontawesome.css"**
 * Copy **"./js/all.js"** to your project's javascripts directory and rename it **"app/assets/javascripts/fontawesome.js"**
-* Copy all the fonts from **"webfonts"** folder and place them in **"app/assets/webfonts"** folder
+* Copy all the fonts from **"webfonts"** folder and place them in **"app/assets/webfonts"** folder (or just copy over the entire folder)
 
-### Step 2
+#### Step 2
 
 **Remove** any css settings you have done for this gem such as
 * @import 'font-awesome-sprockets';
 * @import 'font-awesome';
 
-### Step 3
+#### Step 3
 
 Add the following to **"config/application.rb"**
-`config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')`
-In the class Application
+```ruby
+config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')
+```
+In the class Application. And thats it.  
+Test it with `icon(:far, 'tachometer-alt-average')` which is a pro icon.
+
+#### Production
+
+In production don't forget to compile the assets using
+`bundle exec rails assets:precompile`
