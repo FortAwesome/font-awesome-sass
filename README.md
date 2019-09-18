@@ -133,8 +133,8 @@ First login to fontawesome and go to the download section. You will see two opti
 * @import 'font-awesome-sprockets';
 * @import 'font-awesome';
 
-Edit file "app/assets/stylesheets/fontawesome.css"
-Search **"../webfonts"** and replace with **"/assets"**
+Edit file **"app/assets/stylesheets/fontawesome.css"**  
+Search **"../webfonts/"** and replace with **"/assets/"**
 
 #### Step 3
 
