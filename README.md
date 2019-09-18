@@ -133,11 +133,15 @@ First login to fontawesome and go to the download section. You will see two opti
 * @import 'font-awesome-sprockets';
 * @import 'font-awesome';
 
+Edit file "app/assets/stylesheets/fontawesome.css"
+Search **"../webfonts"** and replace with **"/assets"**
+
 #### Step 3
 
-Add the following to **"config/application.rb"**
+Add the following to **"config/initializers/assets.rb"**
 ```ruby
-config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')
+Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')
+Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|woff2|ttf)\z/
 ```
 In the class Application. And thats it.  
 Test it with `icon(:far, 'tachometer-alt-average')` which is a pro icon.
