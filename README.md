@@ -113,3 +113,17 @@ Prepend the style of the icon you want to use (`fas`, `far`, `fab`) class to exi
 ```html
 <i class="fab fa-github"></i>
 ```
+
+
+## Using FontAwesome Pro
+
+Assuming you have purchased fontawesome pro and want to use Rails asset pipeline.
+
+First login to fontawesome and go to the download section. You will see two options in the download seaction, they are "Web" and "Desktop". Click on "Pro for Web" and download it. Unzip it to any tempory folder. 
+
+### Step 1
+
+* Copy "./css/all.css" to you project's stylesheets directory and rename it "app/assets/stylesheets/fontawesome.css"
+* Copy "./js/all.js" to your project's javascripts directory and rename it "app/assets/javascripts/fontawesome.js"
+* Copy all the fonts from "webfonts" folder and place them in "app/assets/fonts" folder
+
