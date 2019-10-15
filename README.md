@@ -141,7 +141,7 @@ Search **"../webfonts/"** and replace with **"/assets/"**
 Add the following to **"config/initializers/assets.rb"**
 ```ruby
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'webfonts')
-Rails.application.config.assets.precompile << /\.(?:svg|eot|woff|woff2|ttf)\z/
+Rails.application.config.assets.precompile += %w[.svg .eot .woff .woff2 .ttf]
 ```
 In the class Application. And thats it.  
 Test it with `icon(:far, 'tachometer-alt-average')` which is a pro icon.
