@@ -5,7 +5,9 @@ module FontAwesome
     module Rails
       class Railtie < ::Rails::Railtie
         initializer 'font-awesome-sass.view_helpers' do
-          ActionView::Base.send :include, ViewHelpers
+          ActiveSupport.on_load(:action_view) do
+            include ViewHelpers
+          end
         end
       end
     end
