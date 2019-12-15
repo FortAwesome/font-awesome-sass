@@ -1,5 +1,5 @@
 module FontAwesome
   module Sass
-    VERSION = '5.11.2'.freeze
+    VERSION = '5.12.0'.freeze
   end
 end
