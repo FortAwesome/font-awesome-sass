@@ -10,13 +10,13 @@
 
 ## Breaking Changes
 
-With the update to Font Awesome 5.x there are some breaking changes that will effect your use of this gem. Some of the changes include:
+With the update to Font Awesome 6.x there are some breaking changes that will effect your use of this gem. Some of the changes include:
 
   * Icon name changes
   * New icons
   * The use of an icon style (`solid`, `regular`, or `brands`)
 
-You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/get-started/web-fonts-with-css) guide, our [How to Use](https://fontawesome.com/how-to-use/web-fonts-with-css) guide, and our [Upgrading from Version 4](https://fontawesome.com/how-to-use/upgrading-from-4) guide.
+You can find more detailed information on these changes on our [Quick Start](https://fontawesome.com/v6.0/docs/web/setup/quick-start) guide, our [How to Use](https://fontawesome.com/v6.0/docs/web/add-icons/how-to) guide, and our [Upgrading to Version 6](https://fontawesome.com/v6.0/docs/web/setup/upgrading/) guide.
 
 ## Installation
 
