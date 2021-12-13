@@ -7,16 +7,10 @@
 
  Refactored to support more Ruby environments with code and documentation humbly used from the excellent
  [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
+## Upgrading from Previous Versions
+Check out our [What's Changed in v6](https://fontawesome.com/v6.0/docs/web/setup/upgrading/whats-changed) guide and [Upgrading to Version 6](https://fontawesome.com/v6.0/docs/web/setup/upgrading/) guide.
 
-## Breaking Changes
-
-With the update to Font Awesome 6.x there are some breaking changes that will effect your use of this gem. Some of the changes include:
-
-  * Icon name changes
-  * New icons
-  * The use of an icon style (`solid`, `regular`, or `brands`)
-
-You can find more detailed information on these changes on our [Quick Start](https://fontawesome.com/v6.0/docs/web/setup/quick-start) guide, our [How to Use](https://fontawesome.com/v6.0/docs/web/add-icons/how-to) guide, and our [Upgrading to Version 6](https://fontawesome.com/v6.0/docs/web/setup/upgrading/) guide.
+You can find more detailed information on these changes on our [Quick Start](https://fontawesome.com/v6.0/docs/web/setup/quick-start) guide, our [How to Use](https://fontawesome.com/v6.0/docs/web/add-icons/how-to) guide, our [Upgrading to v6 with SCSS/Less](https://fontawesome.com/v6.0/docs/web/setup/upgrading/scss-less) guide, and our [Sass](https://fontawesome.com/v6.0/docs/web/use-with/scss) guide.
 
 ## Installation
 
