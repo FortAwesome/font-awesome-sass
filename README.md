@@ -2,20 +2,15 @@
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with Ruby on Rails and Sprockets.
+'font-awesome-sass' is a Sass-powered version of [Font Awesome](http://fontawesome.com/) for your Ruby projects and plays nicely with Ruby on Rails and Sprockets.
 
 Refactored to support more Ruby environments with code and documentation humbly used from the excellent [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
-You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/get-started/web-fonts-with-css) guide, our [How to Use](https://fontawesome.com/how-to-use/web-fonts-with-css) guide, and our [Upgrading from Version 4](https://fontawesome.com/how-to-use/upgrading-from-4) guide.
+You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/docs/web/setup/get-started) guide, our [How to Use](https://fontawesome.com/docs/web/) guide, and our [Upgrading Guide](https://fontawesome.com/docs/web/setup/upgrade/) guide.
 
 ## Installation
 
-Please see the appropriate guide for your environment of choice:
-
-* [Ruby on Rails](#a-ruby-on-rails).
-* [Compass](#b-compass-without-rails) not on Rails.
-
-### a. Ruby on Rails
+### Ruby on Rails
 
 In your Gemfile include:
 
@@ -29,11 +24,9 @@ And then execute:
 bundle install
 ```
 
-Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome-sprockets` file
-includes the sprockets assets helper Sass functions used for finding the proper path to the font file.
+Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome` file includes the all the tools needed to get Font Awesome up and running for Rails.
 
 ```scss
-@import "font-awesome-sprockets";
 @import "font-awesome";
 ```
 
@@ -72,3 +65,7 @@ icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
 ```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
+
+### Other Ruby Projects
+
+The `path.scss` file contains a function for using the `font-path` function if found. If the function is not found it will use the `$fa-font-path` variable for the path to the webfont files. You can override this variable to where your framework will store the webfonts files.
