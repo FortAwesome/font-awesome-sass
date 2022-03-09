@@ -2,35 +2,20 @@
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for your Ruby projects and plays nicely with
- Ruby on Rails, Compass, Sprockets, etc.
+'font-awesome-sass' is a Sass-powered version of [Font Awesome](http://fontawesome.com/) for your Ruby projects with specific support for Ruby on Rails and Sprockets.
 
- Refactored to support more Ruby environments with code and documentation humbly used from the excellent
- [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
+Refactored to support more Ruby environments with code and documentation humbly used from the excellent [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
-## Breaking Changes
-
-With the update to Font Awesome 5.x there are some breaking changes that will effect your use of this gem. Some of the changes include:
-
-  * Icon name changes
-  * New icons
-  * The use of an icon style (`solid`, `regular`, or `brands`)
-
-You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/get-started/web-fonts-with-css) guide, our [How to Use](https://fontawesome.com/how-to-use/web-fonts-with-css) guide, and our [Upgrading from Version 4](https://fontawesome.com/how-to-use/upgrading-from-4) guide.
+You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/docs/web/setup/get-started) guide, our [How to Use](https://fontawesome.com/docs/web/) guide, and our [Upgrade](https://fontawesome.com/docs/web/setup/upgrade/) guide.
 
 ## Installation
 
-Please see the appropriate guide for your environment of choice:
-
-* [Ruby on Rails](#a-ruby-on-rails).
-* [Compass](#b-compass-without-rails) not on Rails.
-
-### a. Ruby on Rails
+### Ruby on Rails
 
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 5.15.1'
+gem 'font-awesome-sass', '~> 6.0.0'
 ```
 
 And then execute:
@@ -39,11 +24,9 @@ And then execute:
 bundle install
 ```
 
-Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome-sprockets` file
-includes the sprockets assets helper Sass functions used for finding the proper path to the font file.
+Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome` file includes all the tools needed to get Font Awesome up and running for Rails.
 
 ```scss
-@import "font-awesome-sprockets";
 @import "font-awesome";
 ```
 
@@ -51,65 +34,38 @@ If `app/assets/stylesheets/application.css.scss` does not exist then rename `app
 
 #### Rails Helper usage
 
-With Font Awesome 5.x you now need to select what style of icon you want to use. Font Awesome 5.x has 3 styles:
+With Font Awesome Free 6.x you now need to select what style of icon you want to use. Font Awesome Free 6.x has 3 styles:
 
-  * solid (`fas`)
-  * regular (`far`)
-  * brands (`fab`)
+  * solid (`fa-solid` or `fas`)
+  * regular (`fa-regular` or `far`)
+  * brands (`fa-brands` or `fab`)
 
 In your view:
 
 ```ruby
+icon('fa-solid', 'flag')
+# => <i class="fa-solid fa-flag" aria-hidden="true"></i>
 icon('fas', 'flag')
-# => <i class="fas fa-flag"></i>
+# => <i class="fas fa-flag" aria-hidden="true"></i>
+
 ```
 
 ```ruby
+icon('fa-regular', 'address-book', class: 'strong')
+# => <i class="fa-regular fa-address-book strong" aria-hidden="true"></i>
 icon('far', 'address-book', class: 'strong')
-# => <i class="far fa-address-book strong"></i>
+# => <i class="far fa-address-book strong" aria-hidden="true"></i>
 ```
 
 ```ruby
+icon('fa-brands', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
+# => <i id="my-icon" class="fa-brands fa-font-awesome strong" aria-hidden="true"></i> Font Awesome
 icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
-# => <i id="my-icon" class="fab fa-font-awesome strong"></i> Font Awesome
+# => <i id="my-icon" class="fab fa-font-awesome strong" aria-hidden="true"></i> Font Awesome
 ```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
 
-### b. Compass without Rails
+### Other Ruby Projects
 
-Install the gem
-
-```sh
-gem install font-awesome-sass
-```
-
-If you have an existing Compass project:
-
-```ruby
-# config.rb:
-require 'font-awesome-sass'
-```
-
-Import the FontAwesome styles
-
-```scss
-@import "font-awesome-compass";
-@import "font-awesome";
-```
-
-## Upgrading from FontAwesome::Sass 4.x
-
-Prepend the style of the icon you want to use (`fas`, `far`, `fab`) class to existing icons:
-
-4.x Syntax
-
-```html
-<i class="fa fa-github"></i>
-```
-
-5.x Syntax (GitHub icon exists in the Brands style)
-
-```html
-<i class="fab fa-github"></i>
-```
+The `path.scss` file contains a function for using the `font-path` function if found. If the function is not found it will use the `$fa-font-path` variable for the path to the webfont files. You can override this variable to where your framework will store the webfonts files.

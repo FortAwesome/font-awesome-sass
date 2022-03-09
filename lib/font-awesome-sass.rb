@@ -6,8 +6,6 @@ module FontAwesome
           register_rails_engine
         elsif sprockets?
           register_sprockets
-        elsif compass?
-          register_compass_extension
         elsif deprecated_sass?
           ::Sass.load_paths << stylesheets_path
         end
@@ -34,10 +32,6 @@ module FontAwesome
         defined?(::Sprockets)
       end
 
-      def compass?
-        defined?(::Compass::Frameworks)
-      end
-
       def rails?
         defined?(::Rails)
       end
@@ -48,18 +42,6 @@ module FontAwesome
       end
 
       private
-
-      def register_compass_extension
-        require 'font_awesome/sass/version'
-
-        ::Compass::Frameworks.register(
-          'font-awesome',
-          version: FontAwesome::Sass::VERSION,
-          path: gem_path,
-          stylesheets_directory: stylesheets_path,
-          templates_directory: File.join(gem_path, 'templates')
-        )
-      end
 
       def register_rails_engine
         require 'font_awesome/sass/rails/engine'
