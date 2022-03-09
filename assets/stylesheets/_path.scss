@@ -1,7 +1,0 @@
-@use "sass:meta";
-
-@import "font-awesome/variables";
-
-@function fa-font-path($file) {
-  @return if(function-exists("font-path"), font-path("font-awesome/" + $file), $fa-font-path + "/" + $file);
-}

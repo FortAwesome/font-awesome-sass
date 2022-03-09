@@ -20,6 +20,14 @@
 @import "font-awesome/icons";
 @import "font-awesome/screen-reader";
 
+@function fa-font-path($file) {
+  @if function-exists("font-path") {
+    @return font-path("font-awesome/#{$file}");
+  } @else {
+    @return "#{$fa-font-path}/#{$file}";
+  }
+}
+
 @import "solid";
 @import "regular";
 @import "brands";
