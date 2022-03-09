@@ -6,7 +6,7 @@
 
 Refactored to support more Ruby environments with code and documentation humbly used from the excellent [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
-You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/docs/web/setup/get-started) guide, our [How to Use](https://fontawesome.com/docs/web/) guide, and our [Upgrading Guide](https://fontawesome.com/docs/web/setup/upgrade/) guide.
+You can find more detailed information on these changes on our [Getting Started](https://fontawesome.com/docs/web/setup/get-started) guide, our [How to Use](https://fontawesome.com/docs/web/) guide, and our [Upgrade](https://fontawesome.com/docs/web/setup/upgrade/) guide.
 
 ## Installation
 
@@ -24,7 +24,7 @@ And then execute:
 bundle install
 ```
 
-Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome` file includes the all the tools needed to get Font Awesome up and running for Rails.
+Import the FontAwesome styles in your `app/assets/stylesheets/application.css.scss`. The `font-awesome` file includes all the tools needed to get Font Awesome up and running for Rails.
 
 ```scss
 @import "font-awesome";
