@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/font-awesome-sass.svg)](https://badge.fury.io/rb/font-awesome-sass)
 
-'font-awesome-sass' is a Sass-powered version of [Font Awesome](http://fontawesome.com/) for your Ruby projects and plays nicely with Ruby on Rails and Sprockets.
+'font-awesome-sass' is a Sass-powered version of [Font Awesome](http://fontawesome.com/) for your Ruby projects with specific support for Ruby on Rails and Sprockets.
 
 Refactored to support more Ruby environments with code and documentation humbly used from the excellent [bootstrap-sass](https://github.com/twbs/bootstrap-sass) project by the Bootstrap team
 
@@ -36,32 +36,32 @@ If `app/assets/stylesheets/application.css.scss` does not exist then rename `app
 
 With Font Awesome Free 6.x you now need to select what style of icon you want to use. Font Awesome Free 6.x has 3 styles:
 
-  * solid (`fa-solid`)
-  * regular (`fa-regular`)
-  * brands (`fa-brands`)
+  * solid (`fa-solid` or `fas`)
+  * regular (`fa-regular` or `far`)
+  * brands (`fa-brands` or `fab`)
 
 In your view:
 
 ```ruby
 icon('fa-solid', 'flag')
-# => <i class="fa-solid fa-flag"></i>
+# => <i class="fa-solid fa-flag" aria-hidden="true"></i>
 icon('fas', 'flag')
-# => <i class="fas fa-flag"></i>
+# => <i class="fas fa-flag" aria-hidden="true"></i>
 
 ```
 
 ```ruby
 icon('fa-regular', 'address-book', class: 'strong')
-# => <i class="fa-regular fa-address-book strong"></i>
+# => <i class="fa-regular fa-address-book strong" aria-hidden="true"></i>
 icon('far', 'address-book', class: 'strong')
-# => <i class="far fa-address-book strong"></i>
+# => <i class="far fa-address-book strong" aria-hidden="true"></i>
 ```
 
 ```ruby
 icon('fa-brands', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
-# => <i id="my-icon" class="fa-brands fa-font-awesome strong"></i> Font Awesome
+# => <i id="my-icon" class="fa-brands fa-font-awesome strong" aria-hidden="true"></i> Font Awesome
 icon('fab', 'font-awesome', 'Font Awesome', id: 'my-icon', class: 'strong')
-# => <i id="my-icon" class="fab fa-font-awesome strong"></i> Font Awesome
+# => <i id="my-icon" class="fab fa-font-awesome strong" aria-hidden="true"></i> Font Awesome
 ```
 
 Note: the icon helper can take a hash of options that will be passed to the content_tag helper
