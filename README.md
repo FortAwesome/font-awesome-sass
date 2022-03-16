@@ -15,7 +15,7 @@ You can find more detailed information on these changes on our [Getting Started]
 In your Gemfile include:
 
 ```ruby
-gem 'font-awesome-sass', '~> 6.0.0'
+gem 'font-awesome-sass', '~> 6.1.0'
 ```
 
 And then execute:
