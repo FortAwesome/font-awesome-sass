@@ -1,7 +1,12 @@
 // functions
 // --------------------------
 
-// Originally obtained from the Bootstrap https://github.com/twbs/bootstrap
+// fa-content: convenience function used to set content property
+@function fa-content($fa-var) {
+  @return unquote('"#{ $fa-var }"');
+}
+
+// fa-divide: Originally obtained from the Bootstrap https://github.com/twbs/bootstrap
 //
 // Licensed under: The MIT License (MIT)
 //
@@ -25,6 +30,7 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
+
 @function fa-divide($dividend, $divisor, $precision: 10) {
   $sign: if($dividend > 0 and $divisor > 0, 1, -1);
   $dividend: abs($dividend);
@@ -45,7 +51,16 @@
     $remainder: $remainder - $divisor;
   }
   @if $remainder > 0 and $precision > 0 {
-    $remainder: fa-divide($remainder * 10, $divisor, $precision - 1) * .1;
+    $remainder: fa-divide($remainder * 10, $divisor, $precision - 1) * 0.1;
   }
   @return ($quotient + $remainder) * $sign;
+}
+
+// fa-font-path: function used to set font path to webfont files
+@function fa-font-path($file) {
+  @if function-exists("font-path") {
+    @return font-path("font-awesome/#{$file}");
+  } @else {
+    @return "#{$fa-font-path}/#{$file}";
+  }
 }
