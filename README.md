@@ -25,7 +25,6 @@ Official documentation is hosted at fontawesome.com:
 
 Review the following docs before diving in:
 
-* [CONTRIBUTING.md](CONTRIBUTING.md)
 * [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
 And then:
