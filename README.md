@@ -8,25 +8,12 @@ Refactored to support more Ruby environments with code and documentation humbly 
 
 ---
 
-<!-- toc -->
-
-- [Documentation](#documentation)
-- [How to Help](#how-to-help)
-
-<!-- tocstop -->
-
 ## Documentation
 
-Official documentation is hosted at fontawesome.com:
-
-[Check it out here](https://fontawesome.com/docs/web/use-with/ruby-on-rails/)
+Official documentation is hosted at fontawesome.com. Check out the [Ruby on Rails](https://fontawesome.com/docs/web/use-with/ruby-on-rails/) docs.
 
 ## How to Help
 
-Review the following docs before diving in:
+1. Review the following docs before diving in: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 
-* [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
-
-And then:
-
-1. Check the existing issue and see if you can help!
+2. Check the existing [issues](https://github.com/FortAwesome/font-awesome-sass/issues) and see if you can help!
