@@ -55,3 +55,12 @@
   }
   @return ($quotient + $remainder) * $sign;
 }
+
+// fa-font-path: function used to set font path to webfont files
+@function fa-font-path($file) {
+  @if function-exists("font-path") {
+    @return font-path("font-awesome/#{$file}");
+  } @else {
+    @return "#{$fa-font-path}/#{$file}";
+  }
+}
