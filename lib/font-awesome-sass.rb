@@ -1,3 +1,17 @@
+begin
+  require 'sassc'
+rescue LoadError
+  begin
+    require 'sassc-embedded'
+  rescue LoadError
+    begin
+      require 'sass-embedded'
+    rescue LoadError
+      raise LoadError.new('font-awesome-sass-rubygem requires a Sass engine. Please add dartsass-sprockets, sassc-rails, dartsass-rails or cssbundling-rails to your dependencies.')
+    end
+  end
+end
+
 module FontAwesome
   module Sass
     class << self
