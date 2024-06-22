@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   s.metadata = {
-    'changelog_uri' => "#{spec.homepage}/releases/tag/#{spec.version}"
+    'changelog_uri' => 'https://fontawesome.com/changelog'
   }
 
   spec.add_runtime_dependency 'sassc', '~> 2.0'
