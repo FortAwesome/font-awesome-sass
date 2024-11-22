@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     'changelog_uri' => 'https://fontawesome.com/changelog'
   }
 
-  spec.adadd_runtime_dependency 'sass-embedded', '~> 1.81'
+  spec.add_runtime_dependency 'sass-embedded', '~> 1.81'
 
   spec.add_development_dependency 'bundler', '>= 1.3'
   spec.add_development_dependency 'rake'
